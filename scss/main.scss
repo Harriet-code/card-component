@@ -1,0 +1,134 @@
+@import "variables.scss";
+// for importing google fonts, go to google fonts, select particular font with weight , then go to selected family and import
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+body {
+  // for the fonts , select specified area to apply fonts family
+  background: $verydarkblue;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background: $verydarkblue;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.card-container {
+  padding: 60px 45px;
+  background: $verydarkblue;
+}
+
+.display-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: $Darkdesaturatedblue;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  gap: 50px;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.left-container {
+  padding: 60px 60px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+.card-item-left {
+  // specify the class to apply a span effcet on that same main container, else the color in the container will overwrite it
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: $white;
+
+  // padding: 60px 60px 24px 60px;
+
+  span {
+    color: $Softviolet;
+  }
+
+  @media screen and (max-width: 700px) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // max-width: 350px;
+  }
+}
+.card-item-right {
+  width: 50%;
+  background-image: linear-gradient(to right, $transViolet, $transViolet),
+    url(/images/image-header-desktop.jpg);
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-color: $Softviolet;
+  // opacity: 0.6;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    min-height: 240px;
+  }
+}
+ul {
+  // ul always comes with its padding, so you set the padding to zero to remove unnecessary padding
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    // max-width: 350px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+
+    p {
+      text-transform: uppercase;
+      color: $Slightly;
+      font-family: "Inter";
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      margin: 0;
+      font-family: "Lexend deca";
+    }
+  }
+}
+.text {
+  color: $Slightly;
+  font-family: "Inter";
+  // text-align: center;
+}
+h1 {
+  max-width: 350px;
+  font-family: "Lexend deca";
+}
+
+// set container to width of 100% for media query responsiveness

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background: #090b1a;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background: #090b1a;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.card-container {
+  padding: 60px 45px;
+  background: #090b1a;
+}
+
+.display-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1938;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  gap: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .display-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.left-container {
+  padding: 60px 60px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.card-item-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+
+.card-item-left span {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 700px) {
+  .card-item-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-item-right {
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(170, 92, 219, 0.65), rgba(170, 92, 219, 0.65)), url(/images/image-header-desktop.jpg);
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-color: #aa5cdb;
+}
+
+@media screen and (max-width: 700px) {
+  .card-item-right {
+    width: 100%;
+    min-height: 240px;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+}
+
+ul li h2 {
+  margin: 0;
+  font-family: "Lexend deca";
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter";
+}
+
+h1 {
+  max-width: 350px;
+  font-family: "Lexend deca";
+}
+/*# sourceMappingURL=main.css.map */
